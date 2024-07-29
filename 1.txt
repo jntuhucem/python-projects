@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ARITHEMATIC</title>
+     </head>
+    <body background="./arith.png"> 
+        <div class ="container">
+            <h1>ARITHEMATIC OPERATIONS</h1>
+            First Number:<input type="number" id="num1" placeholder="enter your 1st number"><br><br>
+            Second Number:<input type="number" id="num2" placeholder="enter your 2nd number"><br><br>
+            <button onclick="performAddition()">Addition</button><br><br>
+            <button onclick="performSubstraction()">Substraction</button><br><br>
+            <button onclick="performMultiplication()">Multiplication</button><br><br>
+            <button onclick="performDivision()">Division</button><br><br>
+            <button onclick="performModuloDivision()">ModuloDivision</button><br><br>
+            <div class="result" id="result"></div>
+            <script>
+                function performAddition(){
+                    const num1=parseFloat(document.getElementById('num1').value);
+                    const num2=parseFloat(document.getElementById('num2').value);
+                    const result=num1+num2;document.getElementById('result').innerText='Result:'+result;
+                }
+                function performSubstraction(){
+                    const num1=parseFloat(document.getElementById('num1').value);
+                    const num2=parseFloat(document.getElementById('num2').value);
+                    const result=num1-num2;document.getElementById('result').innerText='Result:'+result;
+                }
+                function performMultiplication(){
+                    const num1=parseFloat(document.getElementById('num1').value);
+                    const num2=parseFloat(document.getElementById('num2').value);
+                    const result=num1*num2;document.getElementById('result').innerText='Result:'+result;
+                }
+                function performDivision(){
+                    const num1=parseFloat(document.getElementById('num1').value);
+                    const num2=parseFloat(document.getElementById('num2').value);
+                    const result=num1/num2;document.getElementById('result').innerText='Result:'+result;
+                }
+                function performModuloDivision(){
+                    const num1=parseFloat(document.getElementById('num1').value);
+                    const num2=parseFloat(document.getElementById('num2').value);
+                    const result=num1%num2;document.getElementById('result').innerText='Result:'+result;
+                }
+            </script>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+</head>
+<body>
+    <h1>Registration Page</h1>
+    <form>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="rollno">Roll No:</label>
+            <input type="text" id="rollno" name="rollno" required>
+        </div>
+        <div>
+            <label>Gender:</label>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female" required> Female</label>
+            <label><input type="radio" name="gender" value="other" required> Other</label>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted!');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Catalog</title>
+</head>
+<body>
+    <h1>Catalog Page</h1>
+    <ul>
+        <li>
+            Book 1 <button onclick="addToCart('Book 1')">Add to Cart</button>
+        </li>
+        <li>
+            Book 2 <button onclick="addToCart('Book 2')">Add to Cart</button>
+        </li>
+        <li>
+            Book 3 <button onclick="addToCart('Book 3')">Add to Cart</button>
+        </li>
+        <li>
+            Book 4 <button onclick="addToCart('Book 4')">Add to Cart</button>
+        </li>
+        <li>
+            Book 5 <button onclick="addToCart('Book 5')">Add to Cart</button>
+        </li>
+    </ul>
+    <script>
+        function addToCart(bookName) {
+            alert(bookName + ' has been added to the cart.');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cart</title>
+</head>
+<body>
+    <h1>Cart Page</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Book 1</td>
+            <td>1</td>
+            <td>$10</td>
+        </tr>
+        <tr>
+            <td>Book 2</td>
+            <td>2</td>
+            <td>$20</td>
+        </tr>
+        <tr>
+            <td>Book 3</td>
+            <td>3</td>
+            <td>$30</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSM</title>
+</head>
+<body>
+    <h1>CSM Page</h1>
+    <label for="books">Select books:</label>
+    <select name="books" id="book">
+        <option value="ml">Machine Learning (ML)</option>
+        <option value="ai">Artificial Intelligence (AI)</option>
+        <option value="dm">Data Mining (DM)</option>
+    </select><br>
+    <div>
+        <input type="submit" value="Submit" onclick="handleSubmit()">
+    </div>
+
+    <script>
+        function handleSubmit() {
+            alert('Submitted');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>eee</title>
+</head>
+<body>
+    <h1>EEE Page</h1>
+    <label for="books">Select books:</label>
+    <select name="books" id="book">
+        <option value="bee">bee</option>
+        <option value="beee">beee</option>
+        <option value="machines">machines</option>
+    </select><br>
+    <div>
+        <input type="submit" value="Submit" onclick="handleSubmit()">
+    </div>
+
+    <script>
+        function handleSubmit() {
+            alert('Submitted');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSE</title>
+</head>
+<body>
+    <h1>CSE Page</h1>
+    <label for="books">Select books:</label>
+    <select name="books" id="book">
+        <option value="dsa">dsa</option>
+        <option value="dbms">dbms</option>
+        <option value="java">java</option>
+    </select><br>
+    <div>
+        <input type="submit" value="Submit" onclick="handleSubmit()">
+    </div>
+
+    <script>
+        function handleSubmit() {
+            alert('Submitted');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CIVIL</title>
+</head>
+<body>
+    <h1>CIVIL Page</h1>
+    <label for="books">Select books:</label>
+    <select name="books" id="book">
+        <option value="fluid mechanics">fluid mechanics</option>
+        <option value="surveying">surveying</option>
+        <option value="hydrolics">hydrolics</option>
+    </select><br>
+    <div>
+        <input type="submit" value="Submit" onclick="handleSubmit()">
+    </div>
+
+    <script>
+        function handleSubmit() {
+            alert('Submitted');
+        }
+    </script>
+</body>
+</html>
+
+
+
+
